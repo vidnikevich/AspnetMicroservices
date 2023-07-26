@@ -1,8 +1,6 @@
-﻿using Ordering.Domain.Common;
-
-namespace Ordering.Domain.Entities
+﻿namespace EventBus.Messages.Events
 {
-    public class Order : EntityBase
+    public class BasketCheckoutEvent : IntegrationBaseEvent
     {
         public string UserName { get; set; } = string.Empty;
         public decimal TotalPrice { get; set; }
